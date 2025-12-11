@@ -2,7 +2,18 @@
 // backend/db.js
 const mongoose = require('mongoose');
 
-mongoose.connect("add your database url")
+mongoose.connect("mongodb+srv://navneetpathak2005_db_user:STyEbAg6hfmmUptT@cluster0.veffsbe.mongodb.net/paytm", {
+    serverSelectionTimeoutMS: 5000,
+    family: 4,
+    tls: true,
+    tlsAllowInvalidCertificates: true
+})
+    .then(() => {
+        console.log("Connected to MongoDB");
+    })
+    .catch((err) => {
+        console.error("Error connecting to MongoDB:", err);
+    })
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
@@ -13,7 +24,7 @@ const userSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
         minLength: 3,
-        maxLength: 30
+        maxLength: 50
     },
     password: {
         type: String,
@@ -28,7 +39,6 @@ const userSchema = new mongoose.Schema({
     },
     lastName: {
         type: String,
-        required: true,
         trim: true,
         maxLength: 50
     }
@@ -50,6 +60,6 @@ const Account = mongoose.model('Account', accountSchema);
 const User = mongoose.model('User', userSchema);
 
 module.exports = {
-	User,
+    User,
     Account
 };

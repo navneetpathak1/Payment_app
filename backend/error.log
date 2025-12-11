@@ -1,0 +1,5 @@
+2025-12-11T04:23:30.736Z - ValidationError: User validation failed: username: Path `username` (`debug_1765427010528@example.com`) is longer than the maximum allowed length (30).
+    at Document.invalidate (C:\js\Payment_app\backend\node_modules\mongoose\lib\document.js:3318:32)
+    at C:\js\Payment_app\backend\node_modules\mongoose\lib\document.js:3079:17
+    at C:\js\Payment_app\backend\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)

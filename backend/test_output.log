@@ -1,0 +1,10 @@
+Signing up User A: userA_1765459495446@test.com
+User A signed up. Token: Received
+Signing up User B: userB_1765459496040@test.com
+Searching for User B ID with filter: UserB_1765459496040
+Bulk response user count: 1
+Bulk Usernames: ["userb_1765459496040@test.com"]
+User B ID: 693ac6281f143f1676c5491e
+Initiating transfer from A to B (693ac6281f143f1676c5491e)...
+Transfer Result Status: 200
+Transfer Result Data: {"message":"Transfer successful"}
