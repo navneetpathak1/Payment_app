@@ -2,6 +2,9 @@
 
 A full-stack digital wallet application allowing users to sign up, manage their balance, search for other users, and transfer money securely.
 
+[**Live Demo**](https://payment-app123.netlify.app/)
+
+
 ## Features
 
 -   **User Authentication**: Secure Signup and Signin/Login functionality.
