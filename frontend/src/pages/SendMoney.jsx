@@ -58,7 +58,7 @@ export const SendMoney = () => {
                                 return;
                             }
                             try {
-                                await axios.post("http://localhost:3000/api/v1/account/transfer", {
+                                await axios.post("https://payment-app-dz5s.onrender.com/api/v1/account/transfer", {
                                     to: id,
                                     amount
                                 }, {
