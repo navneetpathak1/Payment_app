@@ -2,7 +2,7 @@
 // backend/db.js
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://navneetpathak2005_db_user:STyEbAg6hfmmUptT@cluster0.veffsbe.mongodb.net/paytm", {
+mongoose.connect(process.env.MONOD_URI, {
     serverSelectionTimeoutMS: 5000,
     family: 4,
     tls: true,
